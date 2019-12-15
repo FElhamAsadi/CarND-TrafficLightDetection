@@ -100,12 +100,10 @@ Then, run the following command (replace "..." with your path):
 tensorboard --logdir="Path_to_Your_NewTrain_Folder"
 ```
 Then simply open [http://localhost:6006](http://localhost:6006) in your browser to see TensorBoard. Here, is how my model has progress over time during the training:
-
 <figure>
 	<figcaption>Total loss - Retrained Model for the Simulator</figcaption>
-	<img src="https://github.com/FElhamAsadi/CarND-TrafficLightDetection/blob/master/Results/Loss_total_loss.svg" width="512" height="512" 
+	<img src="https://github.com/FElhamAsadi/CarND-TrafficLightDetection/blob/master/Results/Loss_total_loss.svg" width="800" 
 </figure>
-
 And sample outputs (right image is the ground truth):
 ![Sample Output_1](/Results/eval_1.png)
 
