@@ -20,7 +20,7 @@ Reading [Alex Lechner's githaub](https://github.com/alex-lechner/Traffic-Light-C
 ## 1. Environment Set up - Windows 10
 Tensorflow Object Detection API depends on the following libraries: Jupyter notebook, Python, Tensorflow (>=1.12.0), Protobuf, Pillow, lxml, tf Slim, Matplotlib, Cython, contextlib2. 
 Having [Anaconda](https://docs.anaconda.com/anaconda/install/windows/) and Python (also in the PATH environment variable):
-1. [Install Tensorflow 1.14 with GPU support](...my readme on tensorflow gpu) 
+1. [Install Tensorflow 1.14 with GPU support](https://github.com/FElhamAsadi/CarND-TrafficLightDetection/blob/master/Tensorflow_GPU.md) 
 2. Install the following python packages
 ```
 pip install pillow lxml matplotlib Cython contextlib2
