@@ -100,8 +100,10 @@ Then, run the following command (replace "..." with your path):
 tensorboard --logdir="Path_to_Your_NewTrain_Folder"
 ```
 Then simply open [http://localhost:6006](http://localhost:6006) in your browser to see TensorBoard. Here, is how my model has progress over time during the training:
-[Total Loss]()
-[mAP]()
+[Total Loss](/Results/Loss_total_loss.svg)
+[Detection Box Precission mAP](/Results/DetectionBoxes_Precision_mAP.svg)
+[Sample Output_1](/Results/eval_1.png)
+[Sample Output_2](/Results/eval_2.png)
 
 ## 5. Make the Tensorflow Graph From The Retraining Results 
 When training the model finishes, you will have the following files in the NewTrain folder: 
@@ -117,14 +119,14 @@ These files will be used for makeing the exportable tensorflow model. As mention
 - Case 1: If there was no compatibility concerns at this point
 - Case 2: If you need to export the trained model from tensorflow 1.14 to tensorflow 1.4
 
-### 4.1. Case 1
+### 5.1. Case 1
 Redirect to the NewTrain folder and run the command below (replace your paths in "..."):
 ```
 python "Path_to_tensorflow/models/research"/object_detection/export_inference_graph.py     --input_type image_tensor      --pipeline_config_path "Path_to_Your_ConfigFile"/pipeline.config  --trained_checkpoint_prefix  model.ckpt-25000  --output_directory NewModel
 ```
 Note 25000 was the number of steps that I chose for retraining the model. This output would be the graph as frozen_inference_graph.pb. Results should apper in the NewModel folder created the NewTrain. Now, we can use this frozen file for object detection in the tl_classifier.py.
 
-### 4.2. Case 2
+### 5.2. Case 2
 For exporting the trained model from tensorflow 1.14 to tensorflow 1.4, I recommend using linux (or VM-linux). Here, I took advantage of the Udacity provided VM to genereate my final tensorflow graph. First, you need to copy the NewTrian folder and your pipeline.config file to the VM. Then, follow these steps:
 
 - Since anaconda was not installed on the Udacity's VM, first I used curl to download  and then install it:
