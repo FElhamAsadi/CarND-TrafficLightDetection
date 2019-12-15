@@ -100,10 +100,10 @@ Then, run the following command (replace "..." with your path):
 tensorboard --logdir="Path_to_Your_NewTrain_Folder"
 ```
 Then simply open [http://localhost:6006](http://localhost:6006) in your browser to see TensorBoard. Here, is how my model has progress over time during the training:
-[Total Loss](/Results/Loss_total_loss.svg)
-[Detection Box Precission mAP](/Results/DetectionBoxes_Precision_mAP.svg)
-[Sample Output_1](/Results/eval_1.png)
-[Sample Output_2](/Results/eval_2.png)
+![Total Loss](/Results/Loss_total_loss.svg)
+![Detection Box Precission mAP](/Results/DetectionBoxes_Precision_mAP.svg)
+![Sample Output_1](/Results/eval_1.png)
+![Sample Output_2](/Results/eval_2.png)
 
 ## 5. Make the Tensorflow Graph From The Retraining Results 
 When training the model finishes, you will have the following files in the NewTrain folder: 
