@@ -105,8 +105,8 @@ Then simply open [http://localhost:6006](http://localhost:6006) in your browser 
 	<img src="https://github.com/FElhamAsadi/CarND-TrafficLightDetection/blob/master/Results/Loss_total_loss.svg" width="800" 
 </figure>
 And sample outputs (right image is the ground truth):
+	
 ![Sample Output_1](/Results/eval_1.png)
-
 ![Sample Output_2](/Results/eval_2.png)
 
 ## 5. Make the Tensorflow Graph From The Retraining Results 
