@@ -19,7 +19,7 @@ At the time of writing, the default version of CUDA Toolkit offered is version 1
 Find a compatible version of CuDNN from: https://developer.nvidia.com/cudnn
 you should register in nvidia first. Based on the information on the Tensorflow website, Tensorflow with GPU support requires a cuDNN version of at least 7.2. Then, unzipping cuDNN files and copying to CUDA folders: 
   * Copy cudnn64_7.dll file (can be found in the ...\cuda\bin\cudnn64_7.dll) into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\ 
-* Copy cudnn.h file (can be found in the ...\cuda\ include\cudnn.h) into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include\
+  * Copy cudnn.h file (can be found in the ...\cuda\ include\cudnn.h) into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include\
   * Copy cudnn.lib file (can be found in the ...\cuda\lib\x64\cudnn.lib) into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\lib\x64\
 
 - Step 6: Run cmd as an administrator
