@@ -3,9 +3,7 @@
 Assuming that Windows is already installed on your PC, the additional bits of software you will install as part of these steps are: Microsoft Visual Studio, the NVIDIA CUDA Toolkit, NVIDIA cuDNN
 Python, Tensorflow (with GPU support)
 
-- Step 2: NVIDIA GPU and Driver Installation
-https://www.nvidia.com/Download/index.aspx?lang=en-us 
-Find your gpu model here, download and install it. 
+- Step 2: NVIDIA GPU and Driver Installation: [Find your gpu model here, download and install it](https://www.nvidia.com/Download/index.aspx?lang=en-us). 
 
 
 - Step 3: Download Visual Studio Express 
