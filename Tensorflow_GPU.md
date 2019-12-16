@@ -14,13 +14,12 @@ Visual Studio is a Prerequisite for CUDA Toolkit
 At the time of writing, the default version of CUDA Toolkit offered is version 10.1. However, check which version of CUDA Toolkit you choose for download and installation to ensure compatibility with Tensorflow (it seems tensorflow works with version 10.0 not 10.1). When you go onto the Tensorflow website, the latest version of Tensorflow available (1.13.0) requires CUDA 10.0, not CUDA 10.1. To find CUDA 10.0, you need to navigate to the “Legacy Releases” on the bottom right hand side.
 
 - Step 5: Download and Install cuDNN
-Find a compatible version of CuDNN from: https://developer.nvidia.com/cudnn
-you should register in nvidia first. Based on the information on the Tensorflow website, Tensorflow with GPU support requires a cuDNN version of at least 7.2. Then, unzipping cuDNN files and copying to CUDA folders: 
+[Find a compatible version of CuDNN](https://developer.nvidia.com/cudnn). Note: you should register in nvidia first. Based on the information on the Tensorflow website, Tensorflow with GPU support requires a cuDNN version of at least 7.2. Then, unzip cuDNN files and copy to CUDA folders: 
   * Copy cudnn64_7.dll file (can be found in the ...\cuda\bin\cudnn64_7.dll) into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\ 
   * Copy cudnn.h file (can be found in the ...\cuda\ include\cudnn.h) into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include\
   * Copy cudnn.lib file (can be found in the ...\cuda\lib\x64\cudnn.lib) into C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\lib\x64\
 
-- Step 6: Run cmd as an administrator
+- Step 6: Run the following command in cmd as an administrator
 ```
 C:\> SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin;%PATH%
 C:\>SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\extras\CUPTI\libx64;%PATH%
